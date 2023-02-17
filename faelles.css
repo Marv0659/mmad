@@ -1,5 +1,6 @@
 /* #2c5e85 #852c2c #749da7 #bc7272  */
 /*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Quattrocento Sans', sans-serif;*/
 
 .body {
   background-color: #2c5e85;
@@ -62,4 +63,12 @@
 
 .navbar.sticky .menu li a:hover {
   color: #fff;
+}
+
+footer h3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+footer p {
+  font-family: "Quattrocento Sans", sans-serif;
 }
