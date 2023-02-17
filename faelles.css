@@ -1,14 +1,14 @@
 /* #2c5e85 #852c2c #749da7 #bc7272  */
 
-.body {
-  background-color: #2c5e85;
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
 }
-
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 30px 0;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
@@ -22,13 +22,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #2c5e85;
+  background: #eae9ea;
 }
 
 .navbar .logo a {
   color: #000000;
   font-size: 35px;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .navbar .logo a span {
@@ -61,4 +62,42 @@
 
 .navbar.sticky .menu li a:hover {
   color: #fff;
+}
+
+.home {
+  display: flex;
+  background: url("img/display_img_2.webp") no-repeat center;
+  height: 10vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+
+.home .max-width .row {
+  margin-right: 0;
+}
+
+.forsideText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape {
+  display: flex;
+  background-color: #2c5e85;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 300px;
+  color: white;
+  font-size: 1.5rem;
 }
