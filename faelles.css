@@ -1,4 +1,6 @@
 /* #2c5e85 #852c2c #749da7 #bc7272  */
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Quattrocento Sans', sans-serif;*/
 
 .max-width {
   max-width: 1300px;
@@ -64,6 +66,7 @@
   color: #fff;
 }
 
+
 .home {
   display: flex;
   background: url("img/display_img_2.webp") no-repeat center;
@@ -125,4 +128,16 @@
   background-color: #2c5e85;
   height: 200px;
   width: 200px;
+
+footer {
+  background-color: #2c5e85;
+}
+
+footer h3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+footer p {
+  font-family: "Quattrocento Sans", sans-serif;
+
 }
