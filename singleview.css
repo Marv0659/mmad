@@ -9,6 +9,13 @@ img {
   grid-gap: 1rem;
 }
 
+#main_layout {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
 #first_assignment {
   background-color: #2c5e85;
   color: #fff;
