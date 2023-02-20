@@ -4,7 +4,6 @@ const url = `https://mmaddb-cd0d.restdb.io/rest/food?limit=20&category=${cat}`;
 
 document.querySelector("h1").textContent = cat;
 
-
 const options = {
   headers: {
     "x-apikey": "63ef6b88478852088da683da",
@@ -20,18 +19,17 @@ async function getData() {
   data.forEach(showProduct);
 }
 
-
-function showProduct(product){
+function showProduct(product) {
   console.log(product);
   const template = document.querySelector("#cardLayoutTemplate").content;
 
-const copy = template.cloneNode(true);
-copy.querySelector(".navn").textContent = product.name;
-copy.querySelector("img").src = product.image;
-copy.querySelector(".sværhed").textContent = product.difficulity;
-copy.querySelector(".tid").textContent = product.cookingTime + " minutter";
+  const copy = template.cloneNode(true);
+  copy.querySelector(".navn").textContent = product.name;
+  copy.querySelector("img").src = product.image;
+  copy.querySelector(".sværhed").textContent = "Sværhedsgrad: " + product.difficulity;
+  copy.querySelector(".tid").textContent = "Tilberedningstid: " + product.cookingTime + " min";
 
-document.querySelector("main").appendChild(copy);
+  document.querySelector("main").appendChild(copy);
 }
 
 getData();
