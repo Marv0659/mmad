@@ -9,31 +9,50 @@
     <link rel="stylesheet" href="faelles.css" />
     <title>Listeview</title>
   </head>
-  <body>
-    <header>
-      <a href="index.html">Home</a>
-      <nav>
-        <ul>
-          <li><a href="kategori.html">Kategori</a></li>
+  <body >
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo"><a href="index.html">M<span>mad.</span></a></div>
+        <ul class="menu">
+          <li><a href="listeview.html" target="_blank" class="menu-btn">Categories</a>
+          </li>
         </ul>
-      </nav>
-    </header>
-    <h1>Opskrifter</h1>
-    <template>
-      <div class="card_layout">
-        <div class="card">
-          <img src="placeholder" alt="" />
-          <h3 class="navn">Lorem Ipsum</h3>
-          <p class="sværhed">Netus Mazim et w 1021</p>
-          <p class="tid">Netus Mazim et w 1021</p>
-          <button class="secondary_button">Per Quam</button>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
-    </template>
+    </nav>
+
+    
+      <section class="home2" id="home">
+        <div class="max-width">
+          <div class="home-content-2">
+            <h1>Opskrifter?</h1>
+            
+      
+          </div>
+        </div>
+      </section>
+      <main class="productlist">
+      
+      <template id="cardLayoutTemplate">
+        <article class="card_layout">
+            <img src="placeholder" alt="" />
+            <h3 class="navn">Lorem Ipsum</h3>
+            <p class="sværhed">Netus Mazim et w 1021</p>
+            <p class="tid">Netus Mazim et w 1021</p>
+            <button class="secondary_button">Per Quam</button>
+          
+        </article>
+      </template>
+
+    </main>
+    
     <footer>
       <h3>Kontakt os</h3>
       <p>Tlf.: +45 77 77 77 77</p>
       <p>E-mail: mmad@gmail.com</p>
     </footer>
   </body>
+  <script src="productlist.js"></script>
 </html>

@@ -1,4 +1,9 @@
-const url = "https://mmaddb-cd0d.restdb.io/rest/food";
+const urlParams = new URLSearchParams(window.location.search);
+const cat = urlParams.get("cat");
+const url = `https://mmaddb-cd0d.restdb.io/rest/food?limit=20&category=${cat}`;
+
+document.querySelector("h1").textContent = cat;
+
 
 const options = {
   headers: {
@@ -13,6 +18,20 @@ async function getData() {
 
   // 2 loope gennem data
   data.forEach(showProduct);
+}
+
+
+function showProduct(product){
+  console.log(product);
+  const template = document.querySelector("#cardLayoutTemplate").content;
+
+const copy = template.cloneNode(true);
+copy.querySelector(".navn").textContent = product.name;
+copy.querySelector("img").src = product.image;
+copy.querySelector(".sværhed").textContent = product.difficulity;
+copy.querySelector(".tid").textContent = product.cookingTime + " minutter";
+
+document.querySelector("main").appendChild(copy);
 }
 
 getData();
