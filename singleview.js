@@ -24,9 +24,10 @@ function vis(json) {
   json.forEach((ting) => {
     document.querySelector(".navn").textContent = ting.name;
     document.querySelector(".sværhed").textContent = "Sværhedsgrad: " + ting.difficulity;
-    document.querySelector(".tid").textContent = ting.cookingTime + " min";
+    document.querySelector(".tid").textContent = "Tilberedningstid: " + ting.cookingTime + " min";
     document.querySelector(".ingredienser").textContent = ting.ingredients;
     document.querySelector(".opskrift").textContent = ting.description;
+    document.querySelector(".rating").textContent = "Rating: " + ting.rating + "/6";
   });
 }
 
