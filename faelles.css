@@ -1,6 +1,11 @@
 /* #2c5e85 #852c2c #749da7 #bc7272  */
 /*font-family: 'Open Sans', sans-serif;*/
 /*font-family: 'Quattrocento Sans', sans-serif;*/
+
+body {
+  background-color: #f7f5f7;
+}
+
 main {
   display: block;
 }
@@ -10,11 +15,11 @@ main {
   margin: auto;
 }
 .navbar {
-  position: fixed;
   width: 100%;
   z-index: 999;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
+  height: 5rem;
 }
 
 .navbar.sticky {
@@ -26,7 +31,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #eae9ea;
+  background: #f7f5f7;
 }
 
 .navbar .logo a {
@@ -125,11 +130,12 @@ main {
   justify-content: center;
   text-align: center;
 }
-.forsideKategori a{
+.forsideKategori a {
   justify-content: center;
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: #2c5e85;
+  font-family: "Open Sans", sans-serif;
 }
 
 #forsideKategori a:visited {
@@ -166,25 +172,48 @@ img {
 }
 
 .kat {
-  color: white;
+  color: #2c5e85;
   font-size: 1.5rem;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: #2c5e85;
+  background-color: #f7f5f7;
+  border: solid 2px #2c5e85;
   height: 200px;
-  width: 200px;
+  width: 400px;
+  text-transform: uppercase;
 }
 
 footer {
   background-color: #2c5e85;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #f7f5f7;
+  padding-left: 1rem;
 }
 
-footer h3 {
+h3 {
   font-family: "Open Sans", sans-serif;
 }
 
-footer p {
+h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+a {
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+.forsideText {
   font-family: "Quattrocento Sans", sans-serif;
 }
