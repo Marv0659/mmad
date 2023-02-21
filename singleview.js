@@ -6,7 +6,7 @@ const id = urlParams.get("id");
 const navn = urlParams.get("navn");
 let ting;
 
-const url = "https://mmaddb-cd0d.restdb.io/rest/food";
+const url = `https://mmaddb-cd0d.restdb.io/rest/food/${id}`;
 const options = {
   headers: {
     "x-apikey": "63ef6b88478852088da683da",
