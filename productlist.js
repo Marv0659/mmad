@@ -28,6 +28,7 @@ function showProduct(product) {
   copy.querySelector("img").src = "img/" + product.image;
   copy.querySelector(".sværhed").textContent = "Sværhedsgrad: " + product.difficulity;
   copy.querySelector(".tid").textContent = "Tilberedningstid: " + product.cookingTime + " min";
+  copy.querySelector("a").href = "singleview.html?id=" + product._id;
 
   document.querySelector("main").appendChild(copy);
 }
