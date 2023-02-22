@@ -2,7 +2,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 //find id
 
-const id = urlParams.get("id");
+const id = urlParams.get("_id");
 const navn = urlParams.get("navn");
 let ting;
 
@@ -23,6 +23,7 @@ function vis(json) {
   console.log(json);
   json.forEach((ting) => {
     document.querySelector(".navn").textContent = ting.name;
+    document.querySelector(".billede").src = "img/" + ting.image;
     document.querySelector(".sværhed").textContent = "Sværhedsgrad: " + ting.difficulity;
     document.querySelector(".tid").textContent = "Tilberedningstid: " + ting.cookingTime + " min";
     document.querySelector(".ingredienser").textContent = ting.ingredients;

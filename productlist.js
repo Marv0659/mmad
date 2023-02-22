@@ -25,9 +25,10 @@ function showProduct(product) {
 
   const copy = template.cloneNode(true);
   copy.querySelector(".navn").textContent = product.name;
-  copy.querySelector("img").src = product.image;
+  copy.querySelector("img").src = "img/" + product.image;
   copy.querySelector(".sværhed").textContent = "Sværhedsgrad: " + product.difficulity;
   copy.querySelector(".tid").textContent = "Tilberedningstid: " + product.cookingTime + " min";
+  copy.querySelector("a").href = "singleview.html?id=" + product._id;
 
   document.querySelector("main").appendChild(copy);
 }
