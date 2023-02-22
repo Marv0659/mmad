@@ -3,7 +3,7 @@ const urlParams = new URLSearchParams(window.location.search);
 //find id
 
 const id = urlParams.get("_id");
-const navn = urlParams.get("navn");
+const navn = urlParams.get("name");
 let ting;
 
 const url = "https://mmaddb-cd0d.restdb.io/rest/food";
