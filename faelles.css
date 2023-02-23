@@ -203,6 +203,12 @@ hr.line {
   font-size: 0.9rem;
 }
 
+.liste_img {
+  width: 20rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
 img {
   display: block;
   max-width: 100%;

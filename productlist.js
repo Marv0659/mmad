@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const cat = urlParams.get("cat");
-const url = `https://mmaddb-cd0d.restdb.io/rest/food/?limit=20&category=${cat}`;
+const url = `https://mmaddb-cd0d.restdb.io/rest/food?limit=20&category=${cat}`;
 
 document.querySelector("h1").textContent = cat;
 
@@ -29,6 +29,7 @@ function showProduct(product) {
   copy.querySelector("img").src = "img/" + product.image;
   copy.querySelector(".sværhed").textContent = "Sværhedsgrad: " + product.difficulity;
   copy.querySelector(".tid").textContent = "Tilberedningstid: " + product.cookingTime + " min";
+  copy.querySelector("a").href = "singleview.html?id=" + product._id;
 
   document.querySelector("main").appendChild(copy);
 }
