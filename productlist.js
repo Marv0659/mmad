@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
-const cat = urlParams.get("cat");
+const cat = urlParams.get("kat");
 const url = `https://mmaddb-cd0d.restdb.io/rest/food?limit=20&category=${cat}`;
 
 document.querySelector("h1").textContent = cat;
